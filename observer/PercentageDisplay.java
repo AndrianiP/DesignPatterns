@@ -13,12 +13,14 @@ public class PercentageDisplay implements Observer{
     }
 
     public void update(HashMap<String, Integer> votes) {
-        if(votes.containsKey("Jim Roberts")){
-            int numVotes = votes.get("Jim Roberts")
-        }
+        numVotes = votes.get("Jim Roberts") + votes.get("Cindy Smith");
     }
 
     private void display() {
-
+        System.out.println("Current Percent of Votes:");
+        float jimPercent = votes.get("Jim Roberts") / (float)numVotes;
+        float cindyPercent = votes.get("Cindy Smith") / (float)numVotes;
+        System.out.println("Jim roberts: " + jimPercent +"%");
+        System.out.println("Cindy smith: " + cindyPercent + "%");
     }
 }
