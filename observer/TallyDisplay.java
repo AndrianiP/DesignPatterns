@@ -12,10 +12,12 @@ public class TallyDisplay implements Observer{
     }
 
     public void update(HashMap<String, Integer> votes) {
-        //TODO idk
+        
     }
 
     private void display() {
-        
+        System.out.println("Current Tallies");
+        System.out.println("Jim roberts: " + votes.get("Jim Roberts"));
+        System.out.println("Cindy smith: " + votes.get("Cindy Smith"));
     }
 }
