@@ -2,7 +2,7 @@ package observer;
 
 import java.util.HashMap;
 
-public class TallyDisplay implements Observer{
+public class TallyDisplay implements Observer {
     private Subject poll;
     private HashMap<String, Integer> votes;
 
@@ -12,8 +12,8 @@ public class TallyDisplay implements Observer{
     }
 
     public void update(HashMap<String, Integer> votes) {
-        if(votes.containsKey("Jim Roberts")){
-            //I am in hell currently and im stuck on this update method.... - Andriani
+        if (votes.containsKey("Jim Roberts")) {
+            // I am in hell currently and im stuck on this update method.... - Andriani
 
         }
     }

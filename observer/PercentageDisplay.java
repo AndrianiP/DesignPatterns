@@ -2,7 +2,7 @@ package observer;
 
 import java.util.HashMap;
 
-public class PercentageDisplay implements Observer{
+public class PercentageDisplay implements Observer {
     private Subject poll;
     private HashMap<String, Integer> votes;
     private int numVotes;
@@ -18,9 +18,9 @@ public class PercentageDisplay implements Observer{
 
     private void display() {
         System.out.println("Current Percent of Votes:");
-        float jimPercent = votes.get("Jim Roberts") / (float)numVotes;
-        float cindyPercent = votes.get("Cindy Smith") / (float)numVotes;
-        System.out.println("Jim roberts: " + jimPercent +"%");
+        float jimPercent = votes.get("Jim Roberts") / (float) numVotes;
+        float cindyPercent = votes.get("Cindy Smith") / (float) numVotes;
+        System.out.println("Jim roberts: " + jimPercent + "%");
         System.out.println("Cindy smith: " + cindyPercent + "%");
     }
 }
