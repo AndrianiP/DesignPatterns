@@ -33,11 +33,10 @@ public class StudentGovPoll implements Subject {
 
     public void addCandidate(String president) {
         notifyObservers();
-        
     }
 
     public void enterVotes(String president, int num) {
-        numUpdates = votes.get(president) + num ; 
+        numUpdates = votes.get(president) + num;
         votes.put(president, numUpdates);
         notifyObservers();
     }
