@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 public class StudentGovPoll implements Subject {
 
-    private ArrayList<Observer> observers;
+    private ArrayList<Observer> observers = new ArrayList<Observer>();;
     private HashMap<String, Integer> votes;
     private String school;
     private int numUpdates;
