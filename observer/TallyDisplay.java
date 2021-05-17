@@ -12,15 +12,14 @@ public class TallyDisplay implements Observer {
     }
 
     public void update(HashMap<String, Integer> votes) {
-        if (votes.containsKey("Jim Roberts")) {
-            // I am in hell currently and im stuck on this update method.... - Andriani
-
-        }
+        this.votes = votes;
+        display();
     }
 
     private void display() {
-        System.out.println("Current Tallies");
+        System.out.println("\nCurrent Tallies");
         System.out.println("Jim roberts: " + votes.get("Jim Roberts"));
         System.out.println("Cindy smith: " + votes.get("Cindy Smith"));
     }
 }
+
