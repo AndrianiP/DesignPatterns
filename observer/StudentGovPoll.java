@@ -6,7 +6,7 @@ import java.util.HashMap;
 public class StudentGovPoll implements Subject {
 
     private ArrayList<Observer> observers = new ArrayList<Observer>();;
-    private HashMap<String, Integer> votes;
+    private HashMap<String, Integer> votes = new HashMap<String, Integer>();
     private String school;
     private int numUpdates;
 
@@ -32,7 +32,8 @@ public class StudentGovPoll implements Subject {
     }
 
     public void addCandidate(String president) {
-        notifyObservers();
+        votes.put(president, 0);
+        //notifyObservers();
     }
 
     public void enterVotes(String president, int num) {
