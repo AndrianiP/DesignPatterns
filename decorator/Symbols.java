@@ -19,14 +19,14 @@ public class Symbols extends PasswordDecorator {
             char temp = this.password.charAt(i);
             conversion.put(String.valueOf(temp), String.valueOf(temp));
         }
-        conversion.put("a", "@");
-        conversion.put("b", "8");
-        conversion.put("e", "3");
-        conversion.put("g", "9");
-        conversion.put("i", "!");
-        conversion.put("o", "o");
-        conversion.put("s", "0");
-        conversion.put("t", "7");
+        //conversion.put("a", "@");
+        //conversion.put("b", "8");
+        //conversion.put("e", "3");
+        //conversion.put("g", "9");
+        //conversion.replace("i", "!");
+        //conversion.put("o", "o");
+        //conversion.put("s", "0");
+      //  conversion.put("t", "7");
         /*
         for(conversion.entrySet().forEach( entry -> {
             
@@ -36,7 +36,8 @@ public class Symbols extends PasswordDecorator {
             i++;
         });
         */
-        String reduced = conversion.values().stream().map(Object::toString).reduce("", String::concat);
+        //Some stackoverflow trying to currently debug and see how it works from what i read
+        String reduced = conversion.values().stream().map(String::toString).reduce("", String::concat);
         this.password = reduced;
     }  
     public String getPassword() {
