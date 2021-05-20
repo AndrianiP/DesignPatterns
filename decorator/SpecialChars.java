@@ -1,9 +1,8 @@
 package decorator;
 
-public class Symbols extends PasswordDecorator {
-    public Symbols(Password passwordBeginning){
+public class SpecialChars extends PasswordDecorator {
+    public SpecialChars(Password passwordBeginning){
         super(passwordBeginning);
-
     }
     public String getPassword(){
         return this.password;
