@@ -1,7 +1,5 @@
 package decorator;
 
-import java.util.HashMap;
-import java.util.Map.Entry;
 import java.util.*;
 
 public class Symbols extends PasswordDecorator {
@@ -9,7 +7,7 @@ public class Symbols extends PasswordDecorator {
     public Symbols(Password passwordBeginning) {
         super(passwordBeginning);
         this.password = passwordBeginning.getPassword();
-        HashMap<String, String> conversion = new HashMap<String, String>();
+       
         ArrayList<String> tempArrayList = new ArrayList<String>();
         for (int i = 0; i < this.password.length(); i++) {
             char temp = this.password.charAt(i);
