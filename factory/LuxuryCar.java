@@ -1,5 +1,5 @@
 package factory;
 
-public class LuxuryCar {
+public class LuxuryCar implements Car {
     
 }

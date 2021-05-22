@@ -13,12 +13,14 @@ public abstract class Car {
     }
 
     public void assemble() {
-
+        addFrame();
+        addWheels();
+        addEngine();
+        addWindows();
+        addAccessories();
+        displayAccessories();
     }
-
-    protected void addFrame() {
-
-    }
+    protected abstract void addFrame();
 
     protected void addWheels() {
 
@@ -29,10 +31,9 @@ public abstract class Car {
     protected void addWindows() {
 
     }
-    protected void addAccessories() {
+    protected abstract void addAccessories();
 
-    }
     protected void displayAccessories() {
-        
+
     }
 }

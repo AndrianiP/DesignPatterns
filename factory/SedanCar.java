@@ -1,5 +1,15 @@
 package factory;
 
-public class SedanCar {
-    
+public class SedanCar extends Car {
+    public SedanCar(String make, String model) {
+        super(make, model);
+    }
+
+    protected void addFrame() {
+        System.out.println("Adding a three part frame");
+    }
+
+    protected void addAccessories() {
+        
+    }
 }
