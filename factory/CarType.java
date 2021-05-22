@@ -1,7 +1,5 @@
 package factory;
 
 public enum CarType {
-    SMALL,
-    SEDAN,
-    LUXURY
+    SMALL, SEDAN, LUXURY
 }

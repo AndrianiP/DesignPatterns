@@ -4,6 +4,7 @@ public class LuxuryCar extends Car {
     public LuxuryCar(String make, String model) {
         super(make, model);
         addAccessories();
+        // Calls the assemble method from Car class
         assemble();
     }
 
@@ -16,6 +17,7 @@ public class LuxuryCar extends Car {
         System.out.println("Adding a Supped Up Engine");
     }
 
+    // Adds list of accessories to the Arraylist
     protected void addAccessories() {
         accessories.add(Accessories.FLOOR_MATTS);
         accessories.add(Accessories.PHONE_CHARGER);
