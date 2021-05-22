@@ -10,7 +10,8 @@ public class SmallCar extends Car {
     }
 
     protected void addAccessories() {
-        Acce
+        accessories.add(Accessories.FLOOR_MATTS);
+        accessories.add(Accessories.PHONE_CHARGER);
         
     }
 }
