@@ -5,6 +5,8 @@ import java.util.ArrayList;
 public class SedanCar extends Car {
     public SedanCar(String make, String model) {
         super(make, model);
+        addAccessories();
+        assemble();
     }
 
     protected void addFrame() {

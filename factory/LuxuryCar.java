@@ -3,6 +3,8 @@ package factory;
 public class LuxuryCar extends Car {
     public LuxuryCar(String make, String model) {
         super(make, model);
+        addAccessories();
+        assemble();
     }
 
     protected void addFrame() {

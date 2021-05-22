@@ -13,13 +13,14 @@ public abstract class Car {
     }
 
     public void assemble() {
+        System.out.println("Creating a "+ make+" "+model );
         addFrame();
         addWheels();
         addEngine();
         addWindows();
-        addAccessories();
         displayAccessories();
     }
+
     protected abstract void addFrame();
 
     protected void addWheels() {
