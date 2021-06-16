@@ -10,13 +10,13 @@ public class EnglishState implements State {
     }
 
     public void pressStarButton() {
-        ArrayList<String> eLyrics = new ArrayList<String>();
-        eLyrics.add("Twinkle twinkle little star");
-        eLyrics.add("How I wonder what you are");
-        eLyrics.add("Up above the world so high");
-        eLyrics.add("Like a diamond in the sky");
-        eLyrics.add("Twinkle twinkle little start");
-        eLyrics.add("How i wonder what you are");
+        ArrayList<String> eStarLyrics = new ArrayList<String>();
+        eStarLyrics.add("Twinkle twinkle little star");
+        eStarLyrics.add("How I wonder what you are");
+        eStarLyrics.add("Up above the world so high");
+        eStarLyrics.add("Like a diamond in the sky");
+        eStarLyrics.add("Twinkle twinkle little start");
+        eStarLyrics.add("How i wonder what you are");
     }
 
     public void pressHappyButton() {
