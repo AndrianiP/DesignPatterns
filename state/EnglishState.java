@@ -3,10 +3,11 @@ package state;
 import java.util.*;
 
 public class EnglishState implements State {
+
     private MusicBox box;
 
     public EnglishState(MusicBox box) {
-
+        this.box = box;
     }
 
     public void pressStarButton() {
@@ -17,6 +18,7 @@ public class EnglishState implements State {
         eStarLyrics.add("Like a diamond in the sky");
         eStarLyrics.add("Twinkle twinkle little start");
         eStarLyrics.add("How i wonder what you are");
+        box.playSong("Twinkle Twinkle Little Star", eStarLyrics);
     }
 
     public void pressHappyButton() {
@@ -35,6 +37,7 @@ public class EnglishState implements State {
         eHappyLyrics.add("Hoo-ray!");
         eHappyLyrics.add("If you're happy and you know it, then your voice will surely show it");
         eHappyLyrics.add("If you're happy and you know it, shout Hooray! \n Hoo-ray!");
+        box.playSong("Happy Song", eHappyLyrics);
     }
 
     public void pressEnglishButton() {
@@ -42,11 +45,13 @@ public class EnglishState implements State {
     }
 
     public void pressFrenchButton() {
-        //TODO Change Music box state to french
+        System.out.println("Switching to French");
+        box.setState(box.getFrenchState());
     }
 
     public void pressSpanishButton() {
-        //TODO Change Music box state to spanish
+        System.out.println("Switching to Spanish");
+        box.setState(box.getSpanishState());
     }
 
 }
