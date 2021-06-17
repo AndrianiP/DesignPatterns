@@ -61,7 +61,7 @@ public class MusicBox {
     }
 
     public void playSong(String songName, ArrayList<String> lyrics) {
-        for(int i = 0; i < lyrics.size(); i++){
+        for (int i = 0; i < lyrics.size(); i++) {
             System.out.println(lyrics.get(i));
         }
         selectOptions();
