@@ -2,7 +2,6 @@ package state;
 
 import java.util.Scanner;
 
-import javax.swing.Box;
 
 public class BoxDriver {
     
