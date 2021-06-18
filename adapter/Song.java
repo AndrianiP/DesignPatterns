@@ -11,5 +11,7 @@ public abstract class Song {
 
     public abstract String getGenre();
 
-    public abstract String toString();
+    public String toString() {
+        return null;
+    }
 }

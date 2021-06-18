@@ -28,7 +28,5 @@ public class SongAdapter extends Song{
         return null;
     }
 
-    public String toString() {
-        return null;
-    }
+
 }

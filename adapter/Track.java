@@ -1,6 +1,6 @@
 package adapter;
 
-public class Track extends Song{
+public class Track extends Song {
     private String title;
     private String album;
     private String firstName;
@@ -12,26 +12,23 @@ public class Track extends Song{
     }
 
     public String getTitle() {
-        return null;
+        return this.title;
     }
 
     public String getAlbum() {
-        return null;
+        return this.album;
     }
 
     public String getArtistFirstName() {
-        return null;
+        return this.firstName;
     }
 
     public String getArtistLastName() {
-        return null;
+        return this.lastName;
     }
 
     public String getGenre() {
-        return null;
+        return String.valueOf(this.genre);
     }
 
-    public String toString() {
-        return null;
-    }
 }
