@@ -8,7 +8,11 @@ public class Track extends Song {
     private Genre genre;
 
     public Track(String title, String album, String firstName, String lastName, Genre genre) {
-
+        this.title = title;
+        this.album = album;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.genre = genre;
     }
 
     public String getTitle() {

@@ -1,24 +1,27 @@
 package adapter;
 
-public class Oldie extends Tune {
+public class Oldie implements Tune{
     private String artistName;
     private String songTitle;
     private String recordTitle;
     private String category;
 
     public Oldie(String artistName, String songTitle, String recordTitle, String category) {
-
+        this.artistName = artistName;
+        this.songTitle = songTitle;
+        this.recordTitle = recordTitle;
+        this.category = category;
     }
 
     public String getArtistName(){
-        return null;
+        return this.artistName;
     }
 
     public String getDisplayTitle() {
-        return null;
+        return this.songTitle+ " "+" "+ this.recordTitle;
     }
 
     public String getCategory() {
-        return null;
+        return this.category;
     }
 }

@@ -12,6 +12,7 @@ public abstract class Song {
     public abstract String getGenre();
 
     public String toString() {
-        return null;
+        return "\n"+getTitle() + "\nAlbum: "+ getAlbum() + "\nBy: " + getArtistFirstName() + " " + getArtistLastName() + "\nGenre: " +getGenre();
+
     }
 }

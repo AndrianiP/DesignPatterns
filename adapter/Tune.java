@@ -1,16 +1,10 @@
 package adapter;
 
-public class Tune {
+public interface Tune {
     
-    public String getArtistName(){
-        return null;
-    }
+    public String getArtistName();
 
-    public String getDisplayTitle() {
-        return null;
-    }
+    public String getDisplayTitle();
 
-    public String getCategory() {
-        return null;
-    }
+    public String getCategory();
 }

@@ -1,3 +1,5 @@
+package adapter;
+
 import java.util.ArrayList;
 
 /**
@@ -17,7 +19,9 @@ public class MusicProgram {
         jukebox.addSong(new Track("Waiting On A War", "Medicine at Midnight", "Foo Fighters", "", Genre.ROCK));
         jukebox.addSong(new Track("The Bandit", "When You See Yourself", "Kings of Leon", "", Genre.ROCK));
         jukebox.addSong(new Track("What's Your Country Song", "Country Again", "Thomas", "Rhett", Genre.COUNTRY));
-
+        jukebox.play("Cover Me in Sunshine");
+        jukebox.play("Waiting On A War");
+        jukebox.play("What's your country song");
         // add oldies to jukebox
         ArrayList<Tune> tunes = getMyOldies();
         for (Tune tune : tunes) {
@@ -45,6 +49,7 @@ public class MusicProgram {
 
     public static void main(String[] args) {
         MusicProgram program = new MusicProgram();
+
         program.run();
     }
 }
